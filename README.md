@@ -30,25 +30,10 @@ python Nike_Web_Crawler.py
 
 ### Script Functionality
 
-1. The script scrapes the prices of five Nike shoes:
-    - Dunk Low Retro Shoe 
-    - Dunk Low Retro Shoe 
-    - Dunk Low Retro Shoes
-    - Air Max 95 Shoes
-    - Air Jordan 1 Retro High OG Shoes
-This is can be easily replaced with a product from the Nike Website
-
-2. Extracts the shoe name and price from each shoe's product page.
-3. Stores the retrieved information in a DataFrame with columns "Product", "Name", "Price", and "Time".
-4. Adds a timestamp to the `Time` column to track the price at specific times.
-5. Saves the DataFrame data to a CSV file named `PriceList.csv` for future reference.
-
-### Additional Notes
-
-1. The script uses Selenium's WebDriverWait to wait for specific elements to load before attempting to retrieve their content.
-2. The `tz_London` variable is used to set the timezone for the timestamp in the `Time` column.
-3. The `.get_attribute('innerHTML')` method is used to extract the inner HTML content of the price and product name elements.
-4. The `.to_csv()` method is used to save the DataFrame data to a CSV file.
+1. The script scrapes the product information of any product in Nike
+2. Extracts the product name and price from each shoe's product page.
+3. Stores the retrieved information in a DataFrame with columns "Name", "Price", "Link"
+5. Saves the DataFrame data to a CSV file named `Price.csv` for future reference.
 
 ### Updates
 
@@ -57,4 +42,9 @@ This is can be easily replaced with a product from the Nike Website
 3. It was later discovered on Stack Overflow that the append method was removed from Pandas and was replaced with _append. It was also discovered that text does not work and should be replaced with get_attribute("innerHTML").
 4. The final issue was the " " character appearing in front of the price in the CSV file. This was likely due to encoding or character encoding mismatches when writing to the CSV file. To resolve this issue, the code was modified to explicitly specify the encoding when writing to the CSV file using the 'utf-8-sig' encoding, which is a variant of UTF-8 that includes a UTF-8 Byte Order Mark (BOM). This helped some applications recognize the UTF-8 encoding correctly and prevented the " " character from appearing in the CSV file.
 5. The code now is in a functioning and operating state with the added function of the timestamp
+
+6. Worked on the original code and was able to re-organise the code to better suit use for any products.
+
+Owner of the project - George Appeah
+Collaborator - Owen Tsang
 
