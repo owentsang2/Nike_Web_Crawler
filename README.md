@@ -1,4 +1,5 @@
-## Nike Web Crawler Project
+## Nike Web Crawler Project 
+### Owner - George Appeah
 This project involves web scraping Nike's product pages to extract product names, prices, and links. The project showcases three different implementations of the web crawler using Selenium and BeautifulSoup. It also includes visualisation of the scraped data using Matplotlib and Seaborn.
 
 ## Table of Contents
